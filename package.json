@@ -1,0 +1,36 @@
+{
+  "name": "tamtamme-common",
+  "version": "0.0.1",
+  "description": "TamTamMe Common Libraries",
+  "main": "index.js",
+  "private": false,
+  "engines": {
+    "node": ">=6.3.0"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/alexandreroba/tamtamme-common",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexandreroba/tamtamme-common.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alexandreroba/tamtamme-common/issues"
+  },
+  "author": "Alexandre Roba",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "log4js": "^0.6.38",
+    "redis": "^2.6.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "sinon": "^1.17.5"
+  }
+}

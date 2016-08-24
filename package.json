@@ -27,7 +27,8 @@
   "dependencies": {
     "foreman": "^1.4.1",
     "log4js": "^0.6.38",
-    "redis": "^2.6.2"
+    "redis": "^2.6.2",
+    "uuid": "^2.0.2"
   },
   "devDependencies": {
     "async": "^2.0.1",

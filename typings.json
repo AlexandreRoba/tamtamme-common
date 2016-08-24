@@ -1,6 +1,7 @@
 {
   "globalDependencies": {
-    "log4js": "registry:dt/log4js#0.0.0+20160608042355"
+    "log4js": "registry:dt/log4js#0.0.0+20160608042355",
+    "uuid": "registry:dt/uuid#3.3.0+20160728152600"
   },
   "dependencies": {
     "assertion-error": "registry:npm/assertion-error#1.0.0+20160723033700",

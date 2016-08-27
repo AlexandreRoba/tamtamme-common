@@ -1,8 +1,8 @@
 let commandDefinition = {
-    id: 'commandId',
-    aggregate: 'aggregateName',
-    name: 'commandName',
-    aggregateId: 'aggregateId',
+    id: 'id',
+    name: 'name',
+    aggregate: 'aggregate.name',
+    aggregateId: 'aggregate.id',
     payload: 'payload',
     revision: 'head.revision',
     meta: 'meta'

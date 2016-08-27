@@ -11,5 +11,5 @@ module.exports = {
     commandDefinition : commandDefinition,
     eventDefinition: eventDefinition,
     Command:Command,
-    NoLogger:NoLogger,
+    noLogger:new NoLogger(),
 };

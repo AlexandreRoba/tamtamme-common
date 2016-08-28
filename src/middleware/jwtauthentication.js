@@ -23,9 +23,9 @@ module.exports = (options)=> {
         let account = {
             id: jwt_payload.id,
             email: jwt_payload.email,
-            payload: jwt_payload
+            userName: jwt_payload.userName,
         };
-        logger.debug('Authentication successful:' + JSON.stringify(jwt_payload));
+        logger.debug('Authentication successful:' + JSON.stringify(account));
         done(null, account);
     }));
     return passport.authenticate('jwt', {session: false})

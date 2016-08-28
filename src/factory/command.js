@@ -14,15 +14,17 @@ function Command(name, aggregate, payload, meta) {
     if (!meta && payload && aggregate) {
         meta = payload;
         payload = aggregate;
+        aggregate=null;
     }
     if (!meta && !payload) {
         payload = aggregate;
+        aggregate=null;
     }
     this.name = name;
     this.id = uuid.v1();
     this.payload = payload || {};
     this.aggregate = aggregate || {};
-    this.meta = meta;
+    this.meta = meta || {};
 }
 
 module.exports = Command;

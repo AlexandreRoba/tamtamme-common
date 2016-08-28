@@ -9,7 +9,7 @@ let ExtractJwt = require('passport-jwt').ExtractJwt;
  * @param {object} options.jwtConfig
  * @returns {object}
  */
-module.exports.getAuthenticationMiddleware = (options)=> {
+module.exports = (options)=> {
     let jwtConfig = options.jwtConfig;
     let logger = options.logger;
 

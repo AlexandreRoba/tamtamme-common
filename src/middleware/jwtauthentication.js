@@ -21,7 +21,8 @@ module.exports = (options)=> {
     };
     passport.use(new JwtStrategy(this.passportOptions, (jwt_payload, done)=> {
         let account = {
-            userid: 'must be filled', //TODO:This is missing and need to be debuged
+            id: jwt_payload.id,
+            email: jwt_payload.email,
             payload: jwt_payload
         };
         logger.debug('Authentication successful:' + JSON.stringify(jwt_payload));

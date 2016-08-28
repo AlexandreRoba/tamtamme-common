@@ -5,7 +5,7 @@ let log4js = require('log4js');
 /**
  * Create a new Message Bus
  * @param {MessageBusRedisConfig} options
- * @param {Logger} logger
+ * @param {object} logger
  * @constructor {MessageBus}
  */
 function MessageBus(options, logger) {

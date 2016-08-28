@@ -1,6 +1,8 @@
 {
   "globalDependencies": {
     "log4js": "registry:dt/log4js#0.0.0+20160608042355",
+    "passport": "registry:dt/passport#0.2.0+20160720063208",
+    "passport-jwt": "registry:dt/passport-jwt#2.0.0+20160330163949",
     "uuid": "registry:dt/uuid#3.3.0+20160728152600"
   },
   "dependencies": {

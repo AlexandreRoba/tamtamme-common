@@ -22,7 +22,8 @@ describe('Command',()=>{
        });
        describe('when called with an aggregate id and name',()=>{
            it('should set the aggregate id and name',(done)=>{
-               let sut = new Command('command',{id:1,name:'aggregate'},{});
+               let aggregate = {id:1,name:'aggregate'};
+               let sut = new Command('command',{},{},aggregate);
                expect(sut.aggregate.id).to.equal(1);
                expect(sut.aggregate.name).to.equal('aggregate');
                done();
@@ -30,7 +31,8 @@ describe('Command',()=>{
        })
        describe('when called without aggregate info but a payload',()=>{
            it('should get the paylod from the second parameter',(done)=>{
-               let sut = new Command('command',{param1:'value1'});
+               let payload = {param1:'value1'};
+               let sut = new Command('command',payload);
                expect(sut.payload).to.deep.equal({param1:'value1'});
                done();
            })

@@ -8,20 +8,11 @@ let uuid = require('uuid');
  * @param {object} meta - The command meta
  * @constructor {Command}
  */
-function Command(name, aggregate, payload, meta) {
+function Command(name,payload, meta,aggregate) {
     if (!name)
         throw new Error('The command name cannot be null or empty');
-    if (!meta && payload && aggregate) {
-        meta = payload;
-        payload = aggregate;
-        aggregate=null;
-    }
-    if (!meta && !payload) {
-        payload = aggregate;
-        aggregate=null;
-    }
-    this.name = name;
     this.id = uuid.v1();
+    this.name = name;
     this.payload = payload || {};
     this.aggregate = aggregate || {};
     this.meta = meta || {};

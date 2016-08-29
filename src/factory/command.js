@@ -13,9 +13,12 @@ function Command(name,payload, meta,aggregate) {
         throw new Error('The command name cannot be null or empty');
     this.id = uuid.v1();
     this.name = name;
-    this.payload = payload || {};
-    this.aggregate = aggregate || {};
-    this.meta = meta || {};
+    if(payload)
+        this.payload = payload;
+    if(aggregate)
+        this.aggregate = aggregate;
+    if(meta)
+        this.meta = meta;
 }
 
 module.exports = Command;

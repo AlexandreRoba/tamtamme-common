@@ -1,6 +1,6 @@
 {
   "name": "tamtamme-common",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "TamTamMe Common Libraries",
   "main": "index.js",
   "private": false,
